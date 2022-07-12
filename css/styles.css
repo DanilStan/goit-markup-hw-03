@@ -1,0 +1,224 @@
+/* #212121 Основной цвет текста */
+/* #757575 Вторичный цвет текста */
+/* #fff Белый */
+/* #2196F3 Акцент */
+/* rgba(255, 255, 255, .6) Вспомогательный цвет текста  */
+/* #E5E5E5 Основной цвет фона */
+/* #2F303A Воспомагательный цвет фона */
+/* #000 Цвет логотипа */
+
+:root {
+  --title-text-color: #212121;  
+  --secondary-text-color: #757575;
+  --primary-white-color: #fff;
+  --acent-color: #2196F3;
+  --secondary-white-color: rgba(255, 255, 255, .6);
+  --primary-background-color: #E5E5E5;
+  --secondary-background-color: #2F303A;
+  --logo-black-color: #000;
+}
+
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--title-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: .03em;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* Логотип */
+.logo {
+  color: var(--logo-black-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
+
+  
+}
+
+.logo .logo-primary {
+  color: var(--acent-color);
+}
+
+/* Навигация сайта */
+.site-nav .link{
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  letter-spacing: .02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--acent-color);
+}
+
+.site-nav .auth {
+    color: var(--secondary-text-color);
+}
+
+/* Клас для сброса параметров списков */
+.list {
+  list-style: none;
+}
+
+/* Секция герой или приветствия */
+.hero {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+.hero-title {
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;  
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+  
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+
+/* Секция преимущиства */
+
+/* Скрытый заголовок */
+.features h2 {
+  color: var(--primary-background-color);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--secondary-text-color);
+
+  line-height: 1.71;
+}
+
+/* Секция занятий сайта */
+.description-title, 
+.team-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Секция наша команда */
+.team-title-small {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--secondary-background-color);
+}
+
+.logo.logo-footer {
+  color: var(--primary-white-color);
+}
+
+.footer-link {
+  color: var(--secondary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+.footer-link.white {
+  color: var(--primary-white-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--acent-color);
+}
+
+/* 
+Страница портфолио "Шапка" сайта и "Футер"
+копируюся из страницы "Студия"
+*/
+
+ /* Скрытый заголовок */
+.section > h1 {
+  color: var(--primary-background-color);
+}
+
+/* Ефект присутствия на страницы (для "Студии и Портфолио") */
+.link.primary {
+  color:var(--acent-color);
+}
+
+/* Кнопки фильтра */
+.filter-button {
+  font-family: Roboto, sans-serif;
+  color: var(--title-text-color);
+  background-color: #f5f3fa;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+}
+
+/* Список из елементов фильтра */
+.items .link {
+  text-decoration: none;
+}
+
+.items-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.items-text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
