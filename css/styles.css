@@ -62,14 +62,22 @@ body {
 .logo .logo-primary {
   color: var(--acent-color);
 }
-
 /* Навигация сайта */
-.site-nav .link{
-  color: var(--title-text-color);
+.site-nav {
+  display: flex;
+}
 
+.site-nav .link{
+
+  color: var(--title-text-color);
   font-weight: 500;
   letter-spacing: .02em;
   text-decoration: none;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+
 }
 
 .site-nav .link:hover,
