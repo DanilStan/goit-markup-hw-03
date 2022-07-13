@@ -29,6 +29,19 @@ body {
   line-height: 1.14;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Блок контейнера */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
 /* Логотип */
 .logo {
   color: var(--logo-black-color);
@@ -61,11 +74,16 @@ body {
 }
 
 .site-nav .auth {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 /* Клас для сброса параметров списков */
 .list {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+
   list-style: none;
 }
 
@@ -75,8 +93,10 @@ body {
   text-align: center;
 }
 .hero-title {
-  color: var(--primary-white-color);
+  margin-top: 0;
+  margin-bottom: 30;
 
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;  
@@ -101,24 +121,40 @@ body {
 
 /* Скрытый заголовок */
 .features h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0;
   color: var(--primary-background-color);
 }
 
 .features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .features-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--secondary-text-color);
 
   line-height: 1.71;
 }
 
 /* Секция занятий сайта */
+
+.container.description {
+  padding-top: 0;
+}
+
 .description-title, 
 .team-title {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -129,14 +165,19 @@ body {
 
 /* Секция наша команда */
 .team-title-small {
+  margin-top: 30px;
+  margin-bottom: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
 .team-text {
-  color: var(--secondary-text-color);
+  margin-top: 10px;
+  margin-bottom: 0;
 
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
 }
@@ -147,6 +188,10 @@ body {
 }
 
 .logo.logo-footer {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 
@@ -164,6 +209,11 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--acent-color);
+}
+
+.address > .list {
+  display: inline-block;
+  margin-bottom: 60px;
 }
 
 /* 
