@@ -18,21 +18,27 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
-        <!-- Навигация сайта -->
-        <nav>
-          <a href="./" lang="en" class="logo"><span class="logo-primary">Wed</span>Studio</a>
+        <div class="main-nav">
+          <!-- Навигация сайта -->
+          <nav class="primary-nav">
+            <a href="./" lang="en" class="logo"><span class="logo-primary">Wed</span>Studio</a>
 
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link primary">Портфолио</a></li>
-            <li><a href="./" class="link">Контакты</a></li>
+            <ul class="site-nav primary list">
+              <li class="item"><a href="./index.html" class="link">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="link primary">Портфолио</a></li>
+              <li class="item"><a href="./" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+          <!-- Контактная информация -->
+          <ul class="site-nav auth list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link auth">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link auth">+38 096 111 11 11</a>
+            </li>
           </ul>
-        </nav>
-        <!-- Контактная информация -->
-        <ul class="site-nav list">
-          <li><a href="mailto:info@devstudio.com" class="link auth">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link auth">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -45,15 +51,15 @@
           <h1>Примеры работ</h1>
           <!-- Фильтер -->
           <ul class="list filter-list">
-            <li><button type="button" class="filter-button">Все</button></li>
-            <li><button type="button" class="filter-button">Веб-сайты</button></li>
-            <li><button type="button" class="filter-button">Приложения</button></li>
-            <li><button type="button" class="filter-button">Дизайн</button></li>
-            <li><button type="button" class="filter-button">Маркетинг</button></li>
+            <li class="item"><button type="button" class="filter-button">Все</button></li>
+            <li class="item"><button type="button" class="filter-button">Веб-сайты</button></li>
+            <li class="item"><button type="button" class="filter-button">Приложения</button></li>
+            <li class="item"><button type="button" class="filter-button">Дизайн</button></li>
+            <li class="item"><button type="button" class="filter-button">Маркетинг</button></li>
           </ul>
           <!-- Список из елементов фильтра -->
           <ul class="items list">
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -61,11 +67,13 @@
                   alt="Экран ноутбука с веб-страницой"
                   width="370"
                 />
-                <h2 class="items-title">Технокряк</h2>
-                <p class="items-text">Веб-сайт</p>
+                <div class="border-items">
+                  <h2 class="items-title">Технокряк</h2>
+                  <p class="items-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -73,11 +81,15 @@
                   alt="Два баскитболиста"
                   width="370"
                 />
-                <h2 class="items-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                <p class="items-text">Дизайн</p>
+                <div class="border-items">
+                  <h2 class="items-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="items-text">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -85,18 +97,22 @@
                   alt="Логотип компании"
                   width="370"
                 />
-                <h2 class="items-title">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="items-text">Приложение</p>
+                <div class="border-items">
+                  <h2 class="items-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="items-text">Приложение</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img class="items-img" src="./images/image-four.jpg" alt="Наушники" width="370" />
-                <h2 class="items-title">Проект <span lang="en">Prime</span></h2>
-                <p class="items-text">Маркетинг</p>
+                <div class="border-items">
+                  <h2 class="items-title">Проект <span lang="en">Prime</span></h2>
+                  <p class="items-text">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -104,11 +120,13 @@
                   alt="Картоные коробки"
                   width="370"
                 />
-                <h2 class="items-title">Проект <span lang="en">Boxes</span></h2>
-                <p class="items-text">Приложение</p>
+                <div class="border-items">
+                  <h2 class="items-title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="items-text">Приложение</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -116,11 +134,13 @@
                   alt="Экран с открытым сайтом"
                   width="370"
                 />
-                <h2 lang="en" class="items-title">Inspiration has no Borders</h2>
-                <p class="items-text">Веб-сайт</p>
+                <div class="border-items">
+                  <h2 lang="en" class="items-title">Inspiration has no Borders</h2>
+                  <p class="items-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -128,11 +148,13 @@
                   alt="Открытый журнал"
                   width="370"
                 />
-                <h2 class="items-title">Издание <span>Limited Edition</span></h2>
-                <p class="items-text">Дизайн</p>
+                <div class="border-items">
+                  <h2 class="items-title">Издание <span>Limited Edition</span></h2>
+                  <p class="items-text">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -140,11 +162,13 @@
                   alt="Бирка с логотипом"
                   width="370"
                 />
-                <h2 class="items-title">Проект <span>LAB</span></h2>
-                <p class="items-text">Маркетинг</p>
+                <div class="border-items">
+                  <h2 class="items-title">Проект <span>LAB</span></h2>
+                  <p class="items-text">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   class="items-img"
@@ -152,8 +176,10 @@
                   alt="Ноутбук с открытым сайтом"
                   width="370"
                 />
-                <h2 lang="en" class="items-title">Growing Business</h2>
-                <p class="items-text">Приложение</p>
+                <div class="border-items">
+                  <h2 lang="en" class="items-title">Growing Business</h2>
+                  <p class="items-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>

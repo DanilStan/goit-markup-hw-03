@@ -309,7 +309,14 @@ body {
 
 /* Кнопки фильтра */
 .list.filter-list {
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 50px;
+}
+
+.filter-list .item:not(:last-child) { 
+  margin-right: 8px;
 }
 
 .filter-button {
@@ -334,13 +341,31 @@ body {
 }
 
 /* Список из елементов фильтра */
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.items .item:nth-child(3n+3) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
 .items .link {
   text-decoration: none;
 }
 
 .items-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -356,9 +381,17 @@ body {
 .items-text {
   margin-top: 4px;
   margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-left: 24px;
 
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
+}
+
+.border-items {
+  border-bottom: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+  border-left: 1px solid #EEE;
 }
 
