@@ -48,8 +48,9 @@ body {
 }
 /* Логотип */
 .logo {
-  color: var(--logo-black-color);
+  display: block  ;
 
+  color: var(--logo-black-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -63,21 +64,20 @@ body {
   color: var(--acent-color);
 }
 /* Навигация сайта */
-.site-nav {
+.primary-nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav .link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-weight: 500;
   letter-spacing: .02em;
   text-decoration: none;
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-
 }
 
 .site-nav .link:hover,
@@ -89,6 +89,29 @@ body {
   color: var(--secondary-text-color);
 }
 
+.site-nav.primary {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav.auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth .item+.item {
+  margin-left: 50px;
+}
 /* Клас для сброса параметров списков */
 .list {
   margin-bottom: 0;
@@ -144,6 +167,7 @@ body {
   color: var(--primary-background-color);
 }
 
+
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -153,17 +177,30 @@ body {
 }
 
 .features-text {
+  width: 270px;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--secondary-text-color);
 
+  color: var(--secondary-text-color);
   line-height: 1.71;
+}
+
+.features-main {
+  display: flex;
+}
+
+.features-main .item:not(:last-child) {
+  margin-right: 30px ;
 }
 
 /* Секция занятий сайта */
 
-.description-image {
-  display: block;
+.description .list {
+  display: flex;
+}
+
+.description .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .container.description {
@@ -183,10 +220,17 @@ body {
   line-height: 1.16;
   text-align: center;
 }
-
 /* Секция наша команда */
 .team {
   background-color: #F5F4FA;
+}
+
+.team .list {
+  display: flex;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-image {
@@ -197,6 +241,7 @@ body {
   margin-top: 30px;
   margin-bottom: 0;
 
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -206,6 +251,7 @@ body {
   margin-top: 10px;
   margin-bottom: 0;
 
+  text-align: center;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
