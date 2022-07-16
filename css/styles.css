@@ -124,13 +124,18 @@ body {
 
 /* Секция герой или приветствия */
 .hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-color: var(--secondary-background-color);
   text-align: center;
 }
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
+  max-width: 696px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -167,7 +172,6 @@ body {
   color: var(--primary-background-color);
 }
 
-
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -203,7 +207,7 @@ body {
   margin-right: 30px;
 }
 
-.container.description {
+.description.section {
   padding-top: 0;
 }
 
@@ -229,6 +233,11 @@ body {
   display: flex;
 }
 
+.team .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -238,13 +247,18 @@ body {
 }
 
 .team-title-small {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 0;
 
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.team-element {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-text {
@@ -259,23 +273,32 @@ body {
 
 /* Подвал */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--secondary-background-color);
 }
 
 .logo.logo-footer {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
 }
 .footer-link {
+  display: block;
+
   color: var(--secondary-white-color);
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 }
+
+.footer .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-link.white {
   color: var(--primary-white-color);
 }
@@ -287,7 +310,6 @@ body {
 
 .address > .list {
   display: inline-block;
-  margin-bottom: 60px;
 }
 
 /* 
@@ -363,9 +385,6 @@ body {
 .items-title {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 20px;
-  padding-left: 24px;
-
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -381,8 +400,6 @@ body {
 .items-text {
   margin-top: 4px;
   margin-bottom: 0;
-  padding-bottom: 20px;
-  padding-left: 24px;
 
   color: var(--secondary-text-color);
   font-size: 16px;
@@ -390,6 +407,11 @@ body {
 }
 
 .border-items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   border-bottom: 1px solid #EEE;
   border-right: 1px solid #EEE;
   border-left: 1px solid #EEE;
